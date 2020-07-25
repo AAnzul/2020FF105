@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+
+int main() {
+    int day, month(1);
+    int days[] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+
+    std::cin >> day;
+
+    while (day > days[-1 + month]) {
+        day -= days[-1 + month++];
+    }
+
+    std::cout << "Month = " << month << ", day = " << day;
+
+    return 0;
+}

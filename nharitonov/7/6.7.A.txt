@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    int  i;
+    double N;
+    cout << "Введите N=  " << endl;
+    cin >> N;
+    double mas[100];
+    cout << "Введите massiv чисел " << endl;
+    for (int i = 1; i <= N; ++i)
+    {
+        cin >> mas[i];
+    }
+    double S = 1;
+    for (int i = 1; i <= N; ++i)
+    {
+        S = S * fabs(mas[i]);
+    }
+    S = pow(S,1/N);
+    cout << "Результат =  " << S << endl;
+    system("pause");
+    return 0;
+}

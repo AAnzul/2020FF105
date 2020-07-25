@@ -1,0 +1,14 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_CTYPE, "Russian");
+    double x;
+    cin >> x;
+    if (x<=3)
+        cout << "F(x)= " << x*x-3*x+9 << endl;
+    else cout << "F(x)= " << 1/(x*x*x+6) << endl;
+    
+    system("PAUSE");
+}

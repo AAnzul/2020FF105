@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double a[100][100], d[100];
+    int n, i, k, j, x, y, z;
+    y = x =z= 0;
+    cout << "\nenter N \n";
+    cin >> n;
+    cout << "\nenter K \n";
+    cin >> k;
+    cout << "\nenter A[N,K] \n";
+    for (i = 1; i <= n; i++)
+        for (j = 1; j <= k; j++)
+        {
+            cin >> a[i][j];
+        }
+    cout << "\nenter D[K] \n";
+    for (i = 1; i <= k; i++)
+        cin >> d[i];
+    i = 1;
+    do 
+    {
+        for (j = 1; j <= k; j++)
+        {
+            if (a[i][j] == d[j])
+                x++;
+            if (x = k) y++;
+        }
+    } while (i != n);
+    if (y == 0) cout << "No matches" << endl;
+    else cout <<"matches = "<< y << endl;
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+    setlocale(LC_CTYPE, "Russian");
+    double x, y,k,z;
+    cout << "Введите x:";
+    cin >> x;
+    cout << "Введите y:";
+    cin >> y;
+    if (x == y)
+        cout << "ERROR" << endl;
+    else 
+    {
+        if (x < y)
+        {
+            k = (x + y) / 2;
+            z = 2 * x * y;
+            cout << "x= " << k << " y= " << z << endl;
+        }
+        else
+        {
+            z = (x + y) / 2;
+            k = 2 * x * y;
+            cout << "x= " << k << " y= " << z << endl;
+        }
+    }
+}

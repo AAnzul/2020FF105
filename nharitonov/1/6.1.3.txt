@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    double a, N;
+    cout << "Введите число а ";
+    cin >> a;
+    cout << "Число N: ";
+    cin >> N;
+    if ((N == 1) || (N == a) || (N == a*a) || (N == a*a*a) || (N == a*a*a*a))
+        cout << "True" << endl;
+    else  cout << "False" << endl;
+    system("pause");
+    return 0;
+}

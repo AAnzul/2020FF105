@@ -1,0 +1,18 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int min = 1000;
+	setlocale(LC_ALL, "Russian");
+	for (int i = 1; i <= 1000; i++)
+		if (i % 2 == 1 && i % 3 == 1 && i % 4 == 1 && i % 5 == 1 && i % 6 == 1 && i % 7 == 0)
+			if (min > i)
+				min = i;
+	cout << min << endl;
+	system("pause");
+	return 0;
+}

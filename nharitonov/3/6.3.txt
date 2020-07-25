@@ -1,0 +1,37 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_CTYPE, "Russian");
+    int m,d;
+    cin >> m;
+    cin >> d;
+    switch (m)
+    {
+    case 1:
+        cout << "Номер дня в году= "<< d << endl; break;
+    case 2:
+        cout << "Номер дня в году= " << d+31 << endl; break;
+    case 3:
+        cout << "Номер дня в году= " << d + 59 << endl; break;
+    case 4:
+        cout << "Номер дня в году= " << d + 90 << endl; break;
+    case 5:
+        cout << "Номер дня в году= " << d + 120 << endl; break;
+    case 6:
+        cout << "Номер дня в году= " << d + 151 << endl; break;
+    case 7:
+        cout << "Номер дня в году= " << d + 181 << endl; break;
+    case 8:
+        cout << "Номер дня в году= " << d + 212 << endl; break;
+    case 9:
+        cout << "Номер дня в году= " << d + 243 << endl; break;
+    case 10:
+        cout << "Номер дня в году= " << d + 273 << endl; break;
+    case 11:
+        cout << "Номер дня в году= " << d + 304 << endl; break;
+    case 12:
+        cout << "Номер дня в году= " << d + 334 << endl; break;
+    }
+}

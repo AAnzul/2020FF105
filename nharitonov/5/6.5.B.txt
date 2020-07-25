@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, m, min = 10;
+    cin >> n;
+    m = (n / 10) * 10;
+    do {
+        if (n % 10 < min)
+            min = n % 10;
+        n /= 10;
+    } while (n > 0);
+    m += min;
+    cout << m;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+    setlocale(LC_CTYPE, "Russian");
+    int x, y;
+    cout << "Введите x:";
+    cin >> x;
+    cout << "Введите y:";
+    cin >> y;
+    if ((x >= 0 && y >= 0 && y <= -x + 6) || (y >= 0 && pow(x + 4, 2) + pow(y - 4, 2) <= 9))
+        cout << "TRUE" << endl;
+    else
+        cout << "FALSE" << endl;
+    system("PAUSE");
+}

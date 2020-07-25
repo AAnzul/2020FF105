@@ -1,0 +1,26 @@
+#include <iostream>
+
+int  main()
+{
+    char tmp, s[999];
+    int len, i;
+    std::cout << "vvod stroki: "; std::cin >> s;
+    len = strlen(s);
+
+    if (len % 2 == 0)
+        for (i = 0; i < len / 2; i++) {
+            tmp = s[i];
+            s[i] = s[len - 1 - i];
+            s[len - 1 - i] = tmp;
+        }
+
+    else
+        for (i = 0; i < (len - 1) / 2; i++) {
+            tmp = s[i];
+            s[i] = s[len - 1 - i];
+            s[len - 1 - i] = tmp;
+        }
+
+    std::cout << s << "\n";
+    return 0;
+}

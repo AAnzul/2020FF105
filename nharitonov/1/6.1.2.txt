@@ -1,0 +1,22 @@
+include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    double a, b, c, s, p;
+    cout << "Введите длины сторон треугольника" << endl << "Сторона а: ";
+    cin >> a;
+    cout << "Сторона b: ";
+    cin >> b;
+    cout << "Сторона c: ";
+    cin >> c;
+    p = (a + b + c) / 2;
+    s = sqrt(p * (p - a) * (p - b) * (p - c));
+    cout << "Высота стороны а: " << 2*s/a << endl;
+    cout << "Высота стороны b: " << 2*s/b << endl;
+    cout << "Высота стороны c: " << 2*s/c << endl;
+    system("pause");
+    return 0;
+}

@@ -1,0 +1,195 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int a, b, Feb, i;
+    cout << "Является ли год високосным? (0-нет; 1-да):";
+    cin >> a;
+    if (a == 1)
+        Feb = 29;
+    else
+        Feb = 28;
+
+    cout << "Введите с какого дня недели начинается январь (1-7 = пн-вс):";
+    cin >> b;
+    cout << endl;
+
+    cout << "                     Январь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+
+    cout << "                     Февраль" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= Feb; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + Feb) % 7;
+
+    cout << "                     Март" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+    cout << "                     Апрель" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 30; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 30) % 7;
+
+
+    cout << "                     Май" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+
+    cout << "                     Июнь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 30; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 30) % 7;
+
+
+    cout << "                     Июль" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+
+    cout << "                     Август" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+    cout << "                     Сентябрь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 30; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 30) % 7;
+
+
+    cout << "                     Октябрь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 31) % 7;
+
+    cout << "                     Ноябрь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 30; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    cout << endl;
+    b = (b + 30) % 7;
+
+
+    cout << "                     Декабрь" << endl << "__________________________________________________" << endl;
+    cout << "Пн\tВт\tСр\tЧт\tПт\tСб\tВс" << endl;
+    for (i = 1; i < b; i++)
+        cout << "\t";
+    for (i = 1; i <= 31; i++)
+    {
+        cout << i << "\t";
+        if ((b + i) % 7 == 1)
+            cout << endl;
+    }
+    cout << endl;
+    system("pause");
+    return 0;
+}

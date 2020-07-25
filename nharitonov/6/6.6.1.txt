@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int NOD(int a, int b) {
+    if (a < b) {
+        swap(a, b);
+    }
+    while (a % b != 0) {
+        a = a % b;
+        swap(a, b);
+    }
+    return b;
+}
+
+ int NOK(int a, int b) {
+    return (a * b) / NOD(a, b);
+}
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+    C = 0;
+    cout << "A=  ";
+    cin >> A;
+    cout << "B= ";
+    cin >> B;
+    cout << "НОД: " <<NOD(A, B) << endl;
+    cout << "НОК: "<<NOK(A, B) << endl;
+}

@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double a[100][100];
+    int n, i, k, j;
+    cout << "\nenter N \n";
+    cin >> n;
+    k = 0;
+    cout << "\nA[I,J] =  \n";
+    for (i = 1; i <= n; i++)
+        for (j = 1; j <= n; j++)
+        {
+            a[i][j] = sin((i * i - j * j) / n);
+            if (a[i][j] > 0)
+                k++;
+        }
+    for (i = 1; i <= n; i++)
+    {
+        cout << endl;
+        for (j = 1; j <= n; j++)
+        {
+            cout << a[i][j] << "     ";
+        }
+    }
+    cout << endl;
+    cout << "+ elements = " << k << endl;
+    return 0;
+}
